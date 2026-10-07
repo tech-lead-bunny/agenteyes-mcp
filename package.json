@@ -1,5 +1,5 @@
 {
-  "name": "agenteyes",
+  "name": "@tech-lead-bunny/agenteyes",
   "version": "0.1.0",
   "description": "MCP server (stdio) exposing headless Chromium tools: screenshot + accessibility + page text for agents.",
   "type": "module",
