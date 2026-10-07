@@ -1,0 +1,40 @@
+{
+  "name": "agenteyes-mcp",
+  "version": "0.1.0",
+  "description": "MCP server (stdio) exposing headless Chromium tools: screenshot + accessibility + page text for agents.",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "agenteyes-mcp": "index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "postinstall": "playwright install chromium --only-shell",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tech-lead-bunny/agenteyes-mcp.git"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "playwright",
+    "screenshot",
+    "accessibility",
+    "agents"
+  ],
+  "author": "Tech Lead Bunny",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tech-lead-bunny/agenteyes-mcp/issues"
+  },
+  "homepage": "https://github.com/tech-lead-bunny/agenteyes-mcp#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "playwright": "^1.52.0",
+    "zod": "^3.25.76"
+  }
+}
